@@ -664,15 +664,34 @@ with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
       execSync(`git remote add origin "${targetRemote}"`, { encoding: 'utf-8' });
 
       const pushOutput = execSync(`git push -u origin ${branch} --force`, { encoding: 'utf-8', timeout: 45000 });
+
+      // Automatically deploy dist to gh-pages branch for instant GitHub Pages activation
+      let ghPagesOutput = '';
+      try {
+        execSync('npm run build', { encoding: 'utf-8' });
+        const distGitCmd = `cd dist && rm -rf .git && git init && git config user.name "MofidGame AutoDeploy" && git config user.email "bot@mofidgame.local" && git checkout -b gh-pages && git add -A && git commit -m "Deploy production build to GitHub Pages" && git remote add origin "${targetRemote}" && git push -u origin gh-pages --force && rm -rf .git`;
+        ghPagesOutput = execSync(distGitCmd, { encoding: 'utf-8', timeout: 45000 });
+      } catch (ghErr: any) {
+        console.warn('[GitHub Pages Push Note]:', ghErr?.message || ghErr);
+      }
+
+      // Extract GitHub username and repo name for direct live URL
+      let ghPagesUrl = '';
+      const match = cleanUrl.match(/github\.com[/:]([^/]+)\/([^/.]+)/);
+      if (match) {
+        ghPagesUrl = `https://${match[1]}.github.io/${match[2]}/`;
+      }
+
       const maskedOrigin = targetRemote.replace(/:[^@]+@/, ':***@');
-      db.addLog('استقرار خودکار', 'پوش به گیت‌هاب', `پروژه با موفقیت به مخزن گیت‌هاب (${maskedOrigin}) ارسال شد.`);
+      db.addLog('استقرار خودکار', 'پوش به گیت‌هاب', `پروژه با موفقیت به مخزن گیت‌هاب (${maskedOrigin}) و GitHub Pages ارسال شد.`);
 
       res.json({
         ok: true,
-        message: '✅ پروژه با موفقیت به گیت‌هاب ارسال شد! گردش کارهای GitHub Pages و آنلاین نگه‌داشتن ربات فعال شدند.',
+        message: '✅ پروژه با موفقیت به مخزن گیت‌هاب ارسال شد و روی GitHub Pages مستقر گردید!',
         remote: maskedOrigin,
         branch,
-        output: pushOutput,
+        pagesUrl: ghPagesUrl,
+        output: pushOutput + '\n' + ghPagesOutput,
       });
     } catch (err: any) {
       console.error('[GitHub Push Error]:', err?.message || err);

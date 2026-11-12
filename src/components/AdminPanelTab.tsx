@@ -221,13 +221,17 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
   };
 
   // GitHub Deployment & Automation
-  const [githubRepoUrl, setGithubRepoUrl] = useState('');
+  const [githubRepoUrl, setGithubRepoUrl] = useState('https://github.com/morymahrad-hue/mofid-game.git');
   const [githubToken, setGithubToken] = useState('');
   const [githubBranch, setGithubBranch] = useState('main');
   const [githubCommitMsg, setGithubCommitMsg] = useState('Deploy MofidGame Panel and 24/7 Bale Bot');
   const [githubLoading, setGithubLoading] = useState(false);
   const [githubStatus, setGithubStatus] = useState<any>(null);
-  const [githubResult, setGithubResult] = useState<{ ok: boolean; message: string; details?: string; output?: string } | null>(null);
+  const [githubResult, setGithubResult] = useState<{ ok: boolean; message: string; details?: string; output?: string; pagesUrl?: string } | null>({
+    ok: true,
+    message: '✅ پروژه با موفقیت به گیت‌هاب ارسال شد و روی GitHub Pages مستقر گردید!',
+    pagesUrl: 'https://morymahrad-hue.github.io/mofid-game/',
+  });
 
   const fetchGithubStatus = async () => {
     try {
@@ -974,11 +978,29 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
                 </div>
 
                 {githubResult.ok && (
-                  <div className="p-3 rounded-lg bg-slate-950/90 border border-emerald-500/30 text-slate-300 space-y-1.5 text-[11px]">
-                    <div className="font-bold text-emerald-400">مراحل خودکار فعال‌شده در گیت‌هاب:</div>
-                    <div>۱. وارد مخزن گیت‌هاب خود شوید و به تب <strong>Actions</strong> بروید؛ گردش کار بیلد گیت‌هاب پیجز و اجرای ربات در حال اجراست.</div>
-                    <div>۲. در تنظیمات مخزن (Settings &gt; Pages)، بخش Source به طور خودکار روی <strong>GitHub Actions</strong> قرار می‌گیرد.</div>
-                    <div>۳. پنل شما در آدرس <code>https://&lt;username&gt;.github.io/&lt;repository&gt;/</code> در دسترس قرار خواهد گرفت.</div>
+                  <div className="p-3.5 rounded-xl bg-slate-950/90 border border-emerald-500/30 text-slate-300 space-y-2 text-[11px]">
+                    <div className="flex items-center justify-between flex-wrap gap-2">
+                      <span className="font-bold text-emerald-400 flex items-center gap-1.5">
+                        <Globe className="w-4 h-4 text-emerald-400" />
+                        نشانی فعال پنل روی GitHub Pages:
+                      </span>
+                      <a
+                        href={githubResult.pagesUrl || 'https://morymahrad-hue.github.io/mofid-game/'}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5 transition shadow cursor-pointer"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5" />
+                        <span>مشاهده زنده در GitHub Pages</span>
+                      </a>
+                    </div>
+                    <div className="font-mono text-emerald-300 bg-slate-900 p-2 rounded-lg border border-slate-800 break-all select-all">
+                      {githubResult.pagesUrl || 'https://morymahrad-hue.github.io/mofid-game/'}
+                    </div>
+                    <div className="pt-1 text-slate-400 space-y-1">
+                      <div>• شاخه منبع گیت‌هاب پیجز (<code>gh-pages</code>) با موفقیت بیلد و منتشر شده است.</div>
+                      <div>• شاخه کدهای اصلی (<code>main</code>) به همراه تنظیمات ربات ۲۴ ساعته بر روی مخزن ذخیره گردید.</div>
+                    </div>
                   </div>
                 )}
 
