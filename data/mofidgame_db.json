@@ -17,8 +17,8 @@
       "startTime": "00:00",
       "endTime": "24:00",
       "durationDays": 365,
-      "activatedAt": "2026-11-12T15:37:04.085Z",
-      "expiresAt": "2027-11-12T15:37:04.085Z",
+      "activatedAt": "2026-11-12T15:39:02.469Z",
+      "expiresAt": "2027-11-12T15:39:02.469Z",
       "isMomentToMomentActive": true
     }
   },
@@ -983,8 +983,8 @@
   ],
   "auditLogs": [
     {
-      "id": "log_1794497824533_gpq1",
-      "timestamp": "2026-11-12T15:37:04.533Z",
+      "id": "log_1794497942980_75su",
+      "timestamp": "2026-11-12T15:39:02.980Z",
       "actor": "ربات بله",
       "action": "شروع پولینگ بلادرنگ",
       "details": "سپر پایداری ۲۴ ساعته فعال شد."
