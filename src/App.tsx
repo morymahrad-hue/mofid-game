@@ -11,6 +11,7 @@ import {
   Question,
   Student
 } from './types/index.ts';
+import { apiFetch } from './utils/api.ts';
 import {
   Activity,
   AlertTriangle,
@@ -89,8 +90,7 @@ export const App: React.FC = () => {
     setIsEnsuringActive(true);
     setEnsureActiveMsg(null);
     try {
-      const res = await fetch('/api/bale/ensure-active', { method: 'POST' });
-      const data = await res.json();
+      const data = await apiFetch('/api/bale/ensure-active', { method: 'POST' });
       if (data.ok) {
         setEnsureActiveMsg('✅ سپر پایداری فعال است و اتصال ربات به سرور بله بدون وقفه پایدار گردید.');
         await loadData();
@@ -108,7 +108,7 @@ export const App: React.FC = () => {
     setIsTogglingTimeWindow(true);
     setTwMessage(null);
     try {
-      const res = await fetch('/api/bale/time-window', {
+      const data = await apiFetch('/api/bale/time-window', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -118,7 +118,6 @@ export const App: React.FC = () => {
           durationDays: twDurationDays
         }),
       });
-      const data = await res.json();
       if (data.ok) {
         setTwMessage(data.message);
         await loadData();
@@ -134,8 +133,7 @@ export const App: React.FC = () => {
 
   const fetchBaleWebhookInfo = async () => {
     try {
-      const res = await fetch('/api/bale/webhook/info');
-      const data = await res.json();
+      const data = await apiFetch('/api/bale/webhook/info');
       if (data && data.ok) {
         setBaleWebhookInfo(data.webhookInfo);
         if (data.currentConfigUrl) {
@@ -150,18 +148,17 @@ export const App: React.FC = () => {
     setBaleWebhookLoading(true);
     setBaleWebhookMsg(null);
     try {
-      const res = await fetch('/api/bale/webhook/set', {
+      const data = await apiFetch('/api/bale/webhook/set', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: baleWebhookUrl.trim() }),
       });
-      const data = await res.json();
       if (data.ok) {
         setBaleWebhookMsg('✅ وب‌هوک با موفقیت روی سرور ثبت و فعال گردید.');
         await fetchBaleWebhookInfo();
         await loadData();
       } else {
-        setBaleWebhookMsg(`❌ خطا: ${data.description || 'نامشخص'}`);
+        setBaleWebhookMsg(`❌ خطا: ${data.description || data.message || 'نامشخص'}`);
       }
     } catch (e: any) {
       setBaleWebhookMsg(`❌ خطا: ${e.message}`);
@@ -174,14 +171,13 @@ export const App: React.FC = () => {
     setBaleWebhookLoading(true);
     setBaleWebhookMsg(null);
     try {
-      const res = await fetch('/api/bale/webhook/delete', { method: 'POST' });
-      const data = await res.json();
+      const data = await apiFetch('/api/bale/webhook/delete', { method: 'POST' });
       if (data.ok) {
         setBaleWebhookMsg('✅ وب‌هوک حذف شد و سیستم به پولینگ ۲۴/۷ بازگشت.');
         await fetchBaleWebhookInfo();
         await loadData();
       } else {
-        setBaleWebhookMsg(`❌ خطا: ${data.description || 'نامشخص'}`);
+        setBaleWebhookMsg(`❌ خطا: ${data.description || data.message || 'نامشخص'}`);
       }
     } catch (e: any) {
       setBaleWebhookMsg(`❌ خطا: ${e.message}`);
@@ -230,11 +226,11 @@ export const App: React.FC = () => {
     setIsRefreshing(true);
     try {
       const [statusRes, studentsRes, questionsRes, adminsRes, resourcesRes] = await Promise.all([
-        fetch('/api/status').then((r) => r.json()).catch(() => null),
-        fetch('/api/students').then((r) => r.json()).catch(() => []),
-        fetch('/api/questions').then((r) => r.json()).catch(() => []),
-        fetch('/api/admins').then((r) => r.json()).catch(() => []),
-        fetch('/api/resources').then((r) => r.json()).catch(() => []),
+        apiFetch('/api/status').catch(() => null),
+        apiFetch('/api/students').catch(() => []),
+        apiFetch('/api/questions').catch(() => []),
+        apiFetch('/api/admins').catch(() => []),
+        apiFetch('/api/resources').catch(() => []),
       ]);
 
       if (statusRes?.ok) {
@@ -276,9 +272,9 @@ export const App: React.FC = () => {
     setIsTogglingPolling(true);
     try {
       if (status?.isActive) {
-        await fetch('/api/bale/stop-polling', { method: 'POST' });
+        await apiFetch('/api/bale/stop-polling', { method: 'POST' });
       } else {
-        await fetch('/api/bale/start-polling', { method: 'POST' });
+        await apiFetch('/api/bale/start-polling', { method: 'POST' });
       }
       await loadData();
     } catch (e) {
@@ -300,15 +296,18 @@ export const App: React.FC = () => {
       if (botTokenInput.trim()) {
         payload.token = botTokenInput.trim();
       }
-      const res = await fetch('/api/config', {
+      const data = await apiFetch('/api/config', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      setConfigSaveMsg(data.message || 'تنظیمات با موفقیت ذخیره شدند.');
-      setBotTokenInput('');
-      await loadData();
+      if (data && data.ok) {
+        setConfigSaveMsg(data.message || 'تنظیمات با موفقیت ذخیره شدند.');
+        setBotTokenInput('');
+        await loadData();
+      } else {
+        setConfigSaveMsg(`خطا: ${data?.message || data?.error || 'مشکل در برقراری ارتباط با سرور'}`);
+      }
     } catch (err: any) {
       setConfigSaveMsg(`خطا: ${err.message}`);
     } finally {
@@ -325,7 +324,7 @@ export const App: React.FC = () => {
     setSimLoading(true);
 
     try {
-      const res = await fetch('/api/bale/simulate', {
+      const data = await apiFetch('/api/bale/simulate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -333,7 +332,6 @@ export const App: React.FC = () => {
           text: textToSend,
         }),
       });
-      const data = await res.json();
       if (data?.responses && Array.isArray(data.responses)) {
         for (const resp of data.responses) {
           const btns: string[] = [];
@@ -384,7 +382,7 @@ export const App: React.FC = () => {
         status: 'approved',
         source: 'طراحی دبیرستان مفید',
       };
-      await fetch('/api/questions', {
+      await apiFetch('/api/questions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -408,7 +406,7 @@ export const App: React.FC = () => {
     e.preventDefault();
     if (!newStName.trim() || !newStChatId.trim()) return;
     try {
-      await fetch('/api/students', {
+      await apiFetch('/api/students', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

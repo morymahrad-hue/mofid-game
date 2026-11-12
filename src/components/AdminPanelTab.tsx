@@ -34,6 +34,7 @@ import {
   X
 } from 'lucide-react';
 import { AdminUser, PollingStatus, Question, Student } from '../types/index.ts';
+import { apiFetch } from '../utils/api.ts';
 
 interface AdminPanelTabProps {
   status: PollingStatus | null;
@@ -97,7 +98,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setAdminTwLoading(true);
     setAdminTwMsg(null);
     try {
-      const res = await fetch('/api/bale/time-window', {
+      const data = await apiFetch('/api/bale/time-window', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -107,12 +108,11 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
           durationDays: 365,
         }),
       });
-      const data = await res.json();
       if (data.ok) {
         setAdminTwMsg(data.message);
         onRefresh();
       } else {
-        setAdminTwMsg(data.message || 'خطا در ثبت');
+        setAdminTwMsg(data.message || 'خطا در ثبت بازه زمانی');
       }
     } catch (e: any) {
       setAdminTwMsg(`خطا: ${e.message}`);
@@ -123,8 +123,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
 
   const fetchWebhookInfo = async () => {
     try {
-      const res = await fetch('/api/bale/webhook/info');
-      const data = await res.json();
+      const data = await apiFetch('/api/bale/webhook/info');
       if (data && data.ok) {
         setWebhookInfo(data.webhookInfo);
         if (data.currentConfigUrl) {
@@ -143,18 +142,17 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setWebhookLoading(true);
     setWebhookMessage(null);
     try {
-      const res = await fetch('/api/bale/webhook/set', {
+      const data = await apiFetch('/api/bale/webhook/set', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: webhookUrlInput.trim() }),
       });
-      const data = await res.json();
       if (data.ok) {
         setWebhookMessage('✅ وب‌هوک با موفقیت روی پیام‌رسان بله ثبت شد. پیام‌ها اکنون مستقیماً به سرور شما ارسال می‌شوند.');
         await fetchWebhookInfo();
         onRefresh();
       } else {
-        setWebhookMessage(`❌ خطا در ثبت وب‌هوک: ${data.description || 'نامشخص'}`);
+        setWebhookMessage(`❌ خطا در ثبت وب‌هوک: ${data.description || data.message || 'نامشخص'}`);
       }
     } catch (e: any) {
       setWebhookMessage(`❌ خطا در ارتباط: ${e.message}`);
@@ -167,14 +165,13 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setWebhookLoading(true);
     setWebhookMessage(null);
     try {
-      const res = await fetch('/api/bale/webhook/delete', { method: 'POST' });
-      const data = await res.json();
+      const data = await apiFetch('/api/bale/webhook/delete', { method: 'POST' });
       if (data.ok) {
-        setWebhookMessage('✅ وب‌هوک در بله حذف شد. بات اکنون می‌تواند توسط متد getUpdates (Long Polling) توسط سرور شما یا این پنل پیام‌ها را دریافت کند.');
+        setWebhookMessage('✅ وب‌هوک در بله حذف شد. بات اکنون می‌تواند توسط متد getUpdates (Long Polling) پیام‌ها را دریافت کند.');
         await fetchWebhookInfo();
         onRefresh();
       } else {
-        setWebhookMessage(`❌ خطا در حذف وب‌هوک: ${data.description || 'نامشخص'}`);
+        setWebhookMessage(`❌ خطا در حذف وب‌هوک: ${data.description || data.message || 'نامشخص'}`);
       }
     } catch (e: any) {
       setWebhookMessage(`❌ خطا در ارتباط: ${e.message}`);
@@ -188,8 +185,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setPollingToggleMessage(null);
     try {
       const endpoint = status?.isActive ? '/api/bale/polling/stop' : '/api/bale/polling/start';
-      const res = await fetch(endpoint, { method: 'POST' });
-      const data = await res.json();
+      const data = await apiFetch(endpoint, { method: 'POST' });
       if (data.ok) {
         setPollingToggleMessage(status?.isActive ? 'دریافت پیام‌های داخلی متوقف شد. اکنون سرور شخصی شما می‌تواند آزادانه از getUpdates استفاده کند.' : 'دریافت پیام‌های داخلی آغاز شد.');
         onRefresh();
@@ -209,8 +205,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setFirebaseSyncing(true);
     setFirebaseSyncMessage(null);
     try {
-      const res = await fetch('/api/firebase/sync', { method: 'POST' });
-      const data = await res.json();
+      const data = await apiFetch('/api/firebase/sync', { method: 'POST' });
       setFirebaseSyncMessage(data.message || (data.ok ? 'همگام‌سازی با فایربیس با موفقیت انجام شد.' : 'خطا در همگام‌سازی'));
       onRefresh();
     } catch (e: any) {
@@ -235,8 +230,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
 
   const fetchGithubStatus = async () => {
     try {
-      const res = await fetch('/api/github/status');
-      const data = await res.json();
+      const data = await apiFetch('/api/github/status');
       if (data && data.ok) {
         setGithubStatus(data);
         if (data.remoteOrigin && !githubRepoUrl) {
@@ -266,7 +260,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setGithubLoading(true);
     setGithubResult(null);
     try {
-      const res = await fetch('/api/github/push', {
+      const data = await apiFetch('/api/github/push', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -276,11 +270,11 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
           commitMessage: githubCommitMsg.trim() || 'Automated deployment for GitHub Pages & 24/7 Bale Bot',
         }),
       });
-      const data = await res.json();
-      if (data.ok) {
+      if (data && data.ok) {
         setGithubResult({
           ok: true,
           message: data.message || 'پروژه با موفقیت به گیت‌هاب ارسال شد.',
+          pagesUrl: data.pagesUrl,
           output: data.output,
         });
         await fetchGithubStatus();
@@ -289,7 +283,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
         setGithubResult({
           ok: false,
           message: data.message || 'خطا در ارسال پروژه به گیت‌هاب',
-          details: data.details,
+          details: data.details || data.error,
         });
       }
     } catch (err: any) {
@@ -312,12 +306,11 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     setCopilotLoading(true);
 
     try {
-      const res = await fetch('/api/ai/copilot-command', {
+      const data = await apiFetch('/api/ai/copilot-command', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ command: textToSend }),
       });
-      const data = await res.json();
       setCopilotHistory((prev) => [
         ...prev,
         {
@@ -342,7 +335,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
     if (!newAdminChatId || !newAdminName) return;
 
     try {
-      const res = await fetch('/api/admins', {
+      const data = await apiFetch('/api/admins', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -351,8 +344,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
           role: newAdminRole,
         }),
       });
-      const data = await res.json();
-      if (data.ok) {
+      if (data && data.ok) {
         setShowAddAdminModal(false);
         setNewAdminChatId('');
         setNewAdminName('');
@@ -365,7 +357,7 @@ export const AdminPanelTab: React.FC<AdminPanelTabProps> = ({
 
   const handleDeleteAdmin = async (id: string) => {
     try {
-      await fetch(`/api/admins/${id}`, { method: 'DELETE' });
+      await apiFetch(`/api/admins/${id}`, { method: 'DELETE' });
       onRefresh();
     } catch (e) {
       console.error(e);
