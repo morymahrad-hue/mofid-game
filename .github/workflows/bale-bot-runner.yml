@@ -1,0 +1,40 @@
+name: 24/7 Bale Bot Worker (GitHub Cloud Runner)
+
+on:
+  schedule:
+    # Run every 5 hours (GitHub Actions max timeout is 6 hours per job) to ensure 24/7 non-stop execution
+    - cron: '0 */5 * * *'
+  push:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+concurrency:
+  group: "bale-bot-runner"
+  cancel-in-progress: true
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Run 24/7 MofidGame Bot Engine
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
+          PORT: 3000
+          NODE_ENV: production
+        run: |
+          echo "🚀 Starting MofidGame Autonomous Bot Server on GitHub Cloud Runner..."
+          npx tsx server.ts

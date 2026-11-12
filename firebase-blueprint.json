@@ -1,0 +1,91 @@
+{
+  "entities": {
+    "Student": {
+      "title": "Student",
+      "description": "پروفایل دانش‌آموز در ربات بله و سامانه آموزشی مفیدگیم",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "شناسه یکتا" },
+        "baleChatId": { "type": "number", "description": "شناسه عددی کاربر در بله" },
+        "username": { "type": "string", "description": "نام کاربری بله" },
+        "fullName": { "type": "string", "description": "نام و نام خانوادگی" },
+        "grade": { "type": "string", "enum": ["7", "8", "9"], "description": "پایه تحصیلی" },
+        "className": { "type": "string", "description": "نام کلاس" },
+        "isApproved": { "type": "boolean", "description": "وضعیت تأیید" },
+        "leaguePoints": { "type": "number", "description": "امتیاز در لیگ مفیدگیم" },
+        "joinedAt": { "type": "string", "description": "تاریخ ثبت‌نام" },
+        "lastActiveAt": { "type": "string", "description": "آخرین فعالیت" }
+      },
+      "required": ["id", "baleChatId", "fullName", "grade", "leaguePoints"]
+    },
+    "Question": {
+      "title": "Question",
+      "description": "بانک سوالات استاندارد پایه‌های هفتم، هشتم و نهم",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "شناسه یکتای سوال" },
+        "grade": { "type": "string", "enum": ["7", "8", "9"] },
+        "subjectId": { "type": "string", "description": "شناسه درس" },
+        "chapterId": { "type": "string", "description": "شناسه فصل" },
+        "topic": { "type": "string", "description": "مبحث سوال" },
+        "type": { "type": "string", "enum": ["four_choice", "true_false", "fill_blank", "short_answer", "multi_step", "conceptual"] },
+        "difficulty": { "type": "string", "enum": ["easy", "medium", "hard"] },
+        "questionText": { "type": "string", "description": "متن سوال" },
+        "correctAnswer": { "type": "string", "description": "پاسخ صحیح" },
+        "explanation": { "type": "string", "description": "پاسخ تشریحی کامل" },
+        "source": { "type": "string", "description": "منبع کتاب درسی یا معلم" },
+        "status": { "type": "string", "enum": ["approved", "draft", "needs_review", "rejected"] },
+        "createdAt": { "type": "string", "description": "تاریخ ایجاد" }
+      },
+      "required": ["id", "grade", "subjectId", "questionText", "correctAnswer", "type", "difficulty"]
+    },
+    "QuizResult": {
+      "title": "QuizResult",
+      "description": "نتایج آزمون‌های برگزار شده توسط ربات برای دانش‌آموزان",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "شناسه نتیجه آزمون" },
+        "studentId": { "type": "string", "description": "شناسه دانش‌آموز" },
+        "studentName": { "type": "string", "description": "نام دانش‌آموز" },
+        "subjectId": { "type": "string", "description": "شناسه درس" },
+        "grade": { "type": "string", "enum": ["7", "8", "9"] },
+        "score": { "type": "number", "description": "درصد یا نمره کسب شده" },
+        "totalQuestions": { "type": "number", "description": "تعداد کل سوالات" },
+        "correctAnswers": { "type": "number", "description": "تعداد پاسخ‌های درست" },
+        "date": { "type": "string", "description": "تاریخ ثبت آزمون" }
+      },
+      "required": ["id", "studentId", "subjectId", "score"]
+    },
+    "BotConfig": {
+      "title": "BotConfig",
+      "description": "تنظیمات اختصاصی ربات بله مفیدگیم در سرور ابری فایربیس",
+      "type": "object",
+      "properties": {
+        "botUsername": { "type": "string", "description": "نام کاربری ربات بله" },
+        "isPollingActive": { "type": "boolean", "description": "وضعیت پولینگ" },
+        "schoolInviteCode": { "type": "string", "description": "کد دعوت مدرسه" },
+        "adminChatId": { "type": "number", "description": "شناسه چت مدیر ارشد" },
+        "lastSyncedAt": { "type": "string", "description": "آخرین همگام‌سازی با فایربیس" }
+      },
+      "required": ["botUsername", "isPollingActive"]
+    }
+  },
+  "firestore": {
+    "/students/{studentId}": {
+      "schema": { "$ref": "Student" },
+      "description": "پروفایل دانش‌آموزان ثبت‌نام شده"
+    },
+    "/questions/{questionId}": {
+      "schema": { "$ref": "Question" },
+      "description": "بانک سوالات آموزشی"
+    },
+    "/quizResults/{resultId}": {
+      "schema": { "$ref": "QuizResult" },
+      "description": "کارنامه آزمون‌ها"
+    },
+    "/botConfig/{configId}": {
+      "schema": { "$ref": "BotConfig" },
+      "description": "تنظیمات همگام ربات"
+    }
+  }
+}

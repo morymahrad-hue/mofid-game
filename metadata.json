@@ -1,0 +1,8 @@
+{
+  "name": "Remix مفیدگیم | مدرسه مفید یادگار امام",
+  "description": "سامانه هوشمند آموزشی، بازیمحور و ربات پیام‌رسان بله برای پایه‌های هفتم، هشتم و نهم دبیرستان مفید یادگار امام سال تحصیلی ۱۴۰۵–۱۴۰۶",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

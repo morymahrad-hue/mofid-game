@@ -1,0 +1,1575 @@
+{
+  "config": {
+    "token": "1137470430:evmdX1quk7mKJh4Q74TMHinOzi_ZoDplhWM",
+    "botUsername": "MofidGameBot",
+    "adminChatId": 1434129251,
+    "isPollingActive": true,
+    "useWebhook": false,
+    "webhookUrl": "",
+    "schoolInviteCode": "MOFID-1405",
+    "pollingIntervalMs": 1500,
+    "adminChatIds": [
+      1434129251,
+      7778889
+    ],
+    "timeWindow247": {
+      "enabled": true,
+      "startTime": "00:00",
+      "endTime": "24:00",
+      "durationDays": 365,
+      "activatedAt": "2026-11-12T15:37:04.085Z",
+      "expiresAt": "2027-11-12T15:37:04.085Z",
+      "isMomentToMomentActive": true
+    }
+  },
+  "subjects": [
+    {
+      "id": "math_7",
+      "name": "ریاضی هفتم",
+      "icon": "📐",
+      "grade": "7",
+      "chaptersCount": 9,
+      "description": "اعداد صحیح، هندسه، جبر و معادله، توان، آمار و احتمال"
+    },
+    {
+      "id": "science_7",
+      "name": "علوم تجربی هفتم",
+      "icon": "🔬",
+      "grade": "7",
+      "chaptersCount": 15,
+      "description": "ماده و تغییرات، اتم‌ها، زیست‌شناسی، فیزیک حرکت و انرژی"
+    },
+    {
+      "id": "persian_7",
+      "name": "ادبیات فارسی هفتم",
+      "icon": "📖",
+      "grade": "7",
+      "chaptersCount": 6,
+      "description": "دستور زبان، آرایه‌های ادبی، درک مطلب، نگارش و تاریخ ادبیات"
+    },
+    {
+      "id": "english_7",
+      "name": "زبان انگلیسی Prospect 1",
+      "icon": "🌍",
+      "grade": "7",
+      "chaptersCount": 8,
+      "description": "My Name, My Friends, My Family, My Age, My Appearance"
+    },
+    {
+      "id": "arabic_7",
+      "name": "عربی هفتم",
+      "icon": "📜",
+      "grade": "7",
+      "chaptersCount": 12,
+      "description": "افعال ماضی، ضمایر، واژگان کاربردی، قواعد اسم و فعل"
+    },
+    {
+      "id": "social_7",
+      "name": "مطالعات اجتماعی هفتم",
+      "icon": "🗺️",
+      "grade": "7",
+      "chaptersCount": 12,
+      "description": "حقوق و مسئولیت‌ها، قانون، جغرافیای ایران و تاریخ کهن"
+    },
+    {
+      "id": "payam_7",
+      "name": "پیام‌های آسمان هفتم",
+      "icon": "🕌",
+      "grade": "7",
+      "chaptersCount": 15,
+      "description": "خداشناسی، نبوت و امامت، اخلاق اسلامی و احکام"
+    },
+    {
+      "id": "math_8",
+      "name": "ریاضی هشتم",
+      "icon": "📐",
+      "grade": "8",
+      "chaptersCount": 9,
+      "description": "عددهای گویا، حساب اعداد طبیعی، چندضلعی‌ها، بردار، توان و جذر"
+    },
+    {
+      "id": "science_8",
+      "name": "علوم تجربی هشتم",
+      "icon": "🔬",
+      "grade": "8",
+      "chaptersCount": 15,
+      "description": "تغییرات شیمیایی، تنظیم عصبی، حس و حرکت، تنظیم هورمونی، الکتریسیته"
+    },
+    {
+      "id": "persian_8",
+      "name": "ادبیات فارسی هشتم",
+      "icon": "📖",
+      "grade": "8",
+      "chaptersCount": 6,
+      "description": "نقش‌های دستوری، جناس، تشبیه، استعاره، سبک زندگی ایرانی-اسلامی"
+    },
+    {
+      "id": "english_8",
+      "name": "زبان انگلیسی Prospect 2",
+      "icon": "🌍",
+      "grade": "8",
+      "chaptersCount": 7,
+      "description": "My Nationality, My Abilities, My Health, My City, My Village"
+    },
+    {
+      "id": "arabic_8",
+      "name": "عربی هشتم",
+      "icon": "📜",
+      "grade": "8",
+      "chaptersCount": 10,
+      "description": "فعل مضارع، ساعت، اعداد و اصطلاحات روزمره"
+    },
+    {
+      "id": "social_8",
+      "name": "مطالعات اجتماعی هشتم",
+      "icon": "🗺️",
+      "grade": "8",
+      "chaptersCount": 12,
+      "description": "تعاون، حکومت، آسیای پهناور و ایران در دوران اسلامی"
+    },
+    {
+      "id": "payam_8",
+      "name": "پیام‌های آسمان هشتم",
+      "icon": "🕌",
+      "grade": "8",
+      "chaptersCount": 15,
+      "description": "دیدار با اهل‌بیت، حجاب، جهاد و ارزش‌های اخلاقی"
+    },
+    {
+      "id": "math_9",
+      "name": "ریاضی نهم",
+      "icon": "📐",
+      "grade": "9",
+      "chaptersCount": 8,
+      "description": "مجموعه‌ها، عددهای حقیقی، استدلال و اثبات در هندسه، توان و ریشه، خط"
+    },
+    {
+      "id": "science_9",
+      "name": "علوم تجربی نهم",
+      "icon": "🔬",
+      "grade": "9",
+      "chaptersCount": 15,
+      "description": "مواد و نقش آنها، رفتار اتم‌ها، ماشین‌ها، فشار و آثار آن، زمین‌ساخت ورقی"
+    },
+    {
+      "id": "persian_9",
+      "name": "ادبیات فارسی نهم",
+      "icon": "📖",
+      "grade": "9",
+      "chaptersCount": 6,
+      "description": "وزن شعر، قرابت معنایی، آرایه‌های ترکیبی، نکات دستوری پیشرفته"
+    },
+    {
+      "id": "english_9",
+      "name": "زبان انگلیسی Prospect 3",
+      "icon": "🌍",
+      "grade": "9",
+      "chaptersCount": 6,
+      "description": "Personality, Travel, Festivals, Services, Media"
+    },
+    {
+      "id": "arabic_9",
+      "name": "عربی نهم",
+      "icon": "📜",
+      "grade": "9",
+      "chaptersCount": 10,
+      "description": "فعل امر و نهی، جمله‌های ترکیبی، وزن کلمات و ترجمه دقیق"
+    },
+    {
+      "id": "social_9",
+      "name": "مطالعات اجتماعی نهم",
+      "icon": "🗺️",
+      "grade": "9",
+      "chaptersCount": 12,
+      "description": "سیاره زمین، نواحی زیستی، تاریخ معاصر ایران و هویت ملی"
+    },
+    {
+      "id": "payam_9",
+      "name": "پیام‌های آسمان نهم",
+      "icon": "🕌",
+      "grade": "9",
+      "chaptersCount": 12,
+      "description": "توحید و عدل، معاد، ولایت فقیه، امر به معروف"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "m7_ch1",
+      "subjectId": "math_7",
+      "grade": "7",
+      "number": 1,
+      "title": "راهبردهای حل مسئله",
+      "learningObjectives": [
+        "رسم شکل",
+        "الگوسازی",
+        "حذف حالت‌های نامطلوب"
+      ],
+      "prerequisites": [
+        "ریاضی ششم"
+      ]
+    },
+    {
+      "id": "m7_ch2",
+      "subjectId": "math_7",
+      "grade": "7",
+      "number": 2,
+      "title": "عددهای صحیح",
+      "learningObjectives": [
+        "محور اعداد صحیح",
+        "جمع و تفریق عدد صحیح",
+        "ضرب و تقسیم اعداد علامت‌دار"
+      ],
+      "prerequisites": [
+        "اعداد منفی پایه"
+      ]
+    },
+    {
+      "id": "m7_ch3",
+      "subjectId": "math_7",
+      "grade": "7",
+      "number": 3,
+      "title": "جبر و معادله",
+      "learningObjectives": [
+        "الگوهای جبری",
+        "عبارت‌های جبری",
+        "معادله درجه اول"
+      ],
+      "prerequisites": [
+        "عددهای صحیح"
+      ]
+    },
+    {
+      "id": "m7_ch4",
+      "subjectId": "math_7",
+      "grade": "7",
+      "number": 4,
+      "title": "هندسه و استدلال",
+      "learningObjectives": [
+        "زاویه‌ها",
+        "تبدیلات هندسی",
+        "هم‌نهشتی مثلث‌ها"
+      ],
+      "prerequisites": [
+        "خطوط موازی"
+      ]
+    },
+    {
+      "id": "s7_ch1",
+      "subjectId": "science_7",
+      "grade": "7",
+      "number": 1,
+      "title": "تجربه و تفکر",
+      "learningObjectives": [
+        "روش علمی",
+        "اندازه‌گیری",
+        "یکاهای استاندارد"
+      ],
+      "prerequisites": [
+        "علوم ابتدایی"
+      ]
+    },
+    {
+      "id": "s7_ch2",
+      "subjectId": "science_7",
+      "grade": "7",
+      "number": 2,
+      "title": "اندازه‌گیری در علوم",
+      "learningObjectives": [
+        "جرم، وزن، چگالی",
+        "ابزارهای سنجش"
+      ],
+      "prerequisites": [
+        "واحد‌های اندازه‌گیری"
+      ]
+    },
+    {
+      "id": "s7_ch3",
+      "subjectId": "science_7",
+      "grade": "7",
+      "number": 3,
+      "title": "اتم‌ها الفبای مواد",
+      "learningObjectives": [
+        "ساختار اتم",
+        "پروتون، الکترون، نوترون",
+        "عنصر و ترکیب"
+      ],
+      "prerequisites": [
+        "مفهوم ماده"
+      ]
+    },
+    {
+      "id": "m8_ch1",
+      "subjectId": "math_8",
+      "grade": "8",
+      "number": 1,
+      "title": "عددهای صحیح و گویا",
+      "learningObjectives": [
+        "معرفی اعداد گویا",
+        "چهار عمل اصلی روی گویاها"
+      ],
+      "prerequisites": [
+        "عددهای صحیح هفتم"
+      ]
+    },
+    {
+      "id": "m8_ch2",
+      "subjectId": "math_8",
+      "grade": "8",
+      "number": 2,
+      "title": "حساب عددهای طبیعی",
+      "learningObjectives": [
+        "اعداد اول و مرکب",
+        "غربال اراتستن",
+        "ب.م.م و ک.م.م"
+      ],
+      "prerequisites": [
+        "بخش‌پذیری"
+      ]
+    },
+    {
+      "id": "m8_ch3",
+      "subjectId": "math_8",
+      "grade": "8",
+      "number": 3,
+      "title": "چندضلعی‌ها",
+      "learningObjectives": [
+        "توازی و تعامد",
+        "مجموع زاویه‌های داخلی",
+        "زاویه خارجی"
+      ],
+      "prerequisites": [
+        "هندسه هفتم"
+      ]
+    },
+    {
+      "id": "s8_ch1",
+      "subjectId": "science_8",
+      "grade": "8",
+      "number": 1,
+      "title": "مخلوط و جداسازی مواد",
+      "learningObjectives": [
+        "محلول‌ها",
+        "سوسپانسیون و کلویید",
+        "روش‌های جداسازی"
+      ],
+      "prerequisites": [
+        "شیمی هفتم"
+      ]
+    },
+    {
+      "id": "s8_ch2",
+      "subjectId": "science_8",
+      "grade": "8",
+      "number": 2,
+      "title": "تغییرهای شیمیایی در خدمت زندگی",
+      "learningObjectives": [
+        "واکنش شیمیایی",
+        "سوختن",
+        "انرژی شیمیایی"
+      ],
+      "prerequisites": [
+        "تغییر فیزیکی و شیمیایی"
+      ]
+    },
+    {
+      "id": "s8_ch4",
+      "subjectId": "science_8",
+      "grade": "8",
+      "number": 4,
+      "title": "تنظیم عصبی",
+      "learningObjectives": [
+        "مغز و نخاع",
+        "نورون و سیناپس",
+        "انعکاس‌های عصبی"
+      ],
+      "prerequisites": [
+        "سلول زیستی"
+      ]
+    },
+    {
+      "id": "m9_ch1",
+      "subjectId": "math_9",
+      "grade": "9",
+      "number": 1,
+      "title": "مجموعه‌ها",
+      "learningObjectives": [
+        "تعریف مجموعه",
+        "اجتماع، اشتراک، تفاضل",
+        "مجموعه و احتمال"
+      ],
+      "prerequisites": [
+        "مفاهیم پایه"
+      ]
+    },
+    {
+      "id": "m9_ch2",
+      "subjectId": "math_9",
+      "grade": "9",
+      "number": 2,
+      "title": "عددهای حقیقی",
+      "learningObjectives": [
+        "اعداد اصم و حقیقی",
+        "نمایش روی محور",
+        "قدر مطلق"
+      ],
+      "prerequisites": [
+        "اعداد گویا"
+      ]
+    },
+    {
+      "id": "m9_ch3",
+      "subjectId": "math_9",
+      "grade": "9",
+      "number": 3,
+      "title": "استدلال و اثبات در هندسه",
+      "learningObjectives": [
+        "استدلال استقرایی و قیاسی",
+        "هم‌نهشتی و تشابه مثلث‌ها"
+      ],
+      "prerequisites": [
+        "هندسه هشتم"
+      ]
+    },
+    {
+      "id": "m9_ch6",
+      "subjectId": "math_9",
+      "grade": "9",
+      "number": 6,
+      "title": "خط و معادله‌های خطی",
+      "learningObjectives": [
+        "شیب خط و عرض از مبدأ",
+        "دستگاه دو معادله دو مجهول"
+      ],
+      "prerequisites": [
+        "جبر و مختصات"
+      ]
+    },
+    {
+      "id": "s9_ch1",
+      "subjectId": "science_9",
+      "grade": "9",
+      "number": 1,
+      "title": "مواد و نقش آنها در زندگی",
+      "learningObjectives": [
+        "فلزات و نافلزات",
+        "پلیمرها و هیدروکربن‌ها",
+        "سیکل کربن"
+      ],
+      "prerequisites": [
+        "اتم هشتم"
+      ]
+    },
+    {
+      "id": "s9_ch2",
+      "subjectId": "science_9",
+      "grade": "9",
+      "number": 2,
+      "title": "رفتار اتم‌ها با یکدیگر",
+      "learningObjectives": [
+        "پیوند یونی و کووالانسی",
+        "یون‌های مثبت و منفی"
+      ],
+      "prerequisites": [
+        "آرایش الکترونی"
+      ]
+    },
+    {
+      "id": "s9_ch4",
+      "subjectId": "science_9",
+      "grade": "9",
+      "number": 4,
+      "title": "حرکت چیست؟",
+      "learningObjectives": [
+        "تندی متوسط و لحظه‌ای",
+        "شتاب متوسط",
+        "مسافت و جابه‌جایی"
+      ],
+      "prerequisites": [
+        "بردار هشتم"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_ocr_curric_1792945482337_2",
+      "grade": "8",
+      "subjectId": "science_8",
+      "chapterId": "s8_ch2",
+      "topic": "تغییرهای شیمیایی و فیزیکی",
+      "type": "four_choice",
+      "difficulty": "medium",
+      "questionText": "کدام گزینه نمونه‌ای از یک تغییر شیمیایی است که با آزاد شدن گرما و نور همراه است؟",
+      "options": [
+        "سوختن گاز شهری",
+        "انجماد آب",
+        "تبخیر الکل",
+        "ذوب شمع"
+      ],
+      "correctAnswer": "سوختن گاز شهری",
+      "explanation": "سوختن واکنشی شیمیایی و گرمازا است که در آن ماده به کربن دی‌اکسید و بخار آب تبدیل می‌شود.",
+      "status": "approved",
+      "source": "استخراج هوشمند برگه نمونه سؤال (موتور تطبیق کتاب درسی مفیدگیم)",
+      "createdAt": "2026-10-25T16:24:42.337Z"
+    },
+    {
+      "id": "q_ocr_curric_1792945482337_1",
+      "grade": "8",
+      "subjectId": "science_8",
+      "chapterId": "s8_ch1",
+      "topic": "اتم‌ها و ساختار مواد",
+      "type": "four_choice",
+      "difficulty": "easy",
+      "questionText": "کدام ذره درون هسته اتم قرار دارد و بار الکتریکی آن مثبت است؟",
+      "options": [
+        "پروتون",
+        "الکترون",
+        "نوترون",
+        "مولکول"
+      ],
+      "correctAnswer": "پروتون",
+      "explanation": "پروتون‌ها ذرات با بار مثبت درون هسته هستند. نوترون‌ها خنثی بوده و الکترون‌ها با بار منفی در پیرامون هسته قرار دارند.",
+      "status": "approved",
+      "source": "استخراج هوشمند برگه نمونه سؤال (موتور تطبیق کتاب درسی مفیدگیم)",
+      "createdAt": "2026-10-25T16:24:42.337Z"
+    },
+    {
+      "id": "q_m7_01",
+      "grade": "7",
+      "subjectId": "math_7",
+      "chapterId": "m7_ch2",
+      "topic": "جمع و تفریق عددهای صحیح",
+      "type": "four_choice",
+      "difficulty": "easy",
+      "questionText": "حاصل عبارت مقابل کدام است؟\n(-۱۲) + (+۱۸) - (-۵) = ؟",
+      "options": [
+        "+۱۱",
+        "+۱",
+        "-۱۱",
+        "+۲۵"
+      ],
+      "correctAnswer": "+۱۱",
+      "explanation": "ابتدا تفریق به جمع تبدیل می‌شود: (-۱۲) + (+۱۸) + (+۵). جمع دو عدد اول: +۶. سپس (+۶) + (+۵) = +۱۱.",
+      "commonMistakes": [
+        "فراموش کردن قرینه شدن منفی در منفی",
+        "اشتباه در علامت جمع دو عدد با علامت مخالف"
+      ],
+      "status": "approved",
+      "source": "کتاب ریاضی هفتم، فصل ۲، صفحه ۲۴",
+      "learningObjective": "محاسبه عبارات جبری اعداد صحیح",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_m7_02",
+      "grade": "7",
+      "subjectId": "math_7",
+      "chapterId": "m7_ch3",
+      "topic": "معادله جبری",
+      "type": "four_choice",
+      "difficulty": "medium",
+      "questionText": "در معادله مقابل، مقدار x چیست؟\n۳x - ۷ = ۱۴",
+      "options": [
+        "x = ۷",
+        "x = ۵",
+        "x = ۳",
+        "x = ۹"
+      ],
+      "correctAnswer": "x = ۷",
+      "explanation": "عدد ۷- به سمت راست با علامت مثبت منتقل می‌شود: ۳x = ۱۴ + ۷ یعنی ۳x = ۲۱. با تقسیم طرفین بر ۳ به دست می‌آید: x = ۷.",
+      "commonMistakes": [
+        "فراموشی تغییر علامت هنگام جابه‌جایی جملات",
+        "تقسیم نکردن بر ضریب مجهول"
+      ],
+      "status": "approved",
+      "source": "کتاب ریاضی هفتم، فصل ۳، صفحه ۳۸",
+      "learningObjective": "حل معادله درجه اول یک مجهولی",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_s7_01",
+      "grade": "7",
+      "subjectId": "science_7",
+      "chapterId": "s7_ch3",
+      "topic": "اتم‌ها و ذرات زیراتمی",
+      "type": "four_choice",
+      "difficulty": "easy",
+      "questionText": "کدام ذره درون هسته اتم قرار دارد و بار الکتریکی آن مثبت است؟",
+      "options": [
+        "پروتون",
+        "الکترون",
+        "نوترون",
+        "مولکول"
+      ],
+      "correctAnswer": "پروتون",
+      "explanation": "پروتون‌ها ذرات با بار مثبت درون هسته هستند. نوترون‌ها خنثی و درون هسته‌اند، و الکترون‌ها بار منفی دارند و در اطراف هسته گردش می‌کنند.",
+      "commonMistakes": [
+        "اشتباه گرفتن نوترون با پروتون به دلیل وجود هر دو در هسته"
+      ],
+      "status": "approved",
+      "source": "کتاب علوم هفتم، فصل ۳، صفحه ۲۰",
+      "learningObjective": "شناخت ذرات تشکیل‌دهنده اتم",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_p7_01",
+      "grade": "7",
+      "subjectId": "persian_7",
+      "chapterId": "persian_7",
+      "topic": "آرایه‌های ادبی",
+      "type": "four_choice",
+      "difficulty": "medium",
+      "questionText": "در بیت «ای نام تو بهترین سرآغاز / بی‌نام تو نامه کی کنم باز»، چه آرایه‌ای بین کلمات «آغاز» و «باز» وجود دارد؟",
+      "options": [
+        "قافیه و جناس",
+        "تضاد",
+        "کنایه",
+        "استعاره"
+      ],
+      "correctAnswer": "قافیه و جناس",
+      "explanation": "دو کلمه آغاز و باز کلمات قافیه هستند و با توجه به هماهنگی حروف در پایان دارای جناس هستند.",
+      "status": "approved",
+      "source": "کتاب فارسی هفتم، ستایش، صفحه ۱۰",
+      "learningObjective": "تشخیص عناصر قافیه و جناس",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_m8_01",
+      "grade": "8",
+      "subjectId": "math_8",
+      "chapterId": "m8_ch2",
+      "topic": "اعداد اول و مرکب",
+      "type": "four_choice",
+      "difficulty": "medium",
+      "questionText": "کدام یک از اعداد زیر یک عدد اول است؟",
+      "options": [
+        "۹۷",
+        "۹۱",
+        "۸۷",
+        "۵۱"
+      ],
+      "correctAnswer": "۹۷",
+      "explanation": "۹۱ مضرب ۷ است (۱۳ × ۷ = ۹۱). ۵۱ بر ۳ بخش‌پذیر است (۵+۱=۶). ۸۷ نیز بر ۳ بخش‌پذیر است (۸+۷=۱۵). عدد ۹۷ تنها بر ۱ و خودش بخش‌پذیر است.",
+      "commonMistakes": [
+        "تصور اینکه ۹۱ عدد اول است به خاطر عدم آشنایی با ضرب ۷ در ۱۳"
+      ],
+      "status": "approved",
+      "source": "کتاب ریاضی هشتم، فصل ۲، صفحه ۲۰",
+      "learningObjective": "تشخیص اعداد اول تا ۱۰۰",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_m8_02",
+      "grade": "8",
+      "subjectId": "math_8",
+      "chapterId": "m8_ch3",
+      "topic": "زاویه‌های چندضلعی",
+      "type": "four_choice",
+      "difficulty": "hard",
+      "questionText": "مجموع زاویه‌های داخلی یک پنج‌ضلعی محدب چند درجه است؟",
+      "options": [
+        "۵۴۰ درجه",
+        "۳۶۰ درجه",
+        "۷۲۰ درجه",
+        "۱۸۰ درجه"
+      ],
+      "correctAnswer": "۵۴۰ درجه",
+      "explanation": "فرمول مجموع زاویه‌های داخلی n ضلعی: (n - ۲) × ۱۸۰. برای ۵ ضلعی: (۵ - ۲) × ۱۸۰ = ۳ × ۱۸۰ = ۵۴۰ درجه.",
+      "commonMistakes": [
+        "فراموشی کم کردن ۲ از تعداد اضلاع"
+      ],
+      "status": "approved",
+      "source": "کتاب ریاضی هشتم، فصل ۳، صفحه ۳۸",
+      "learningObjective": "محاسبه مجموع زوایای چندضلعی",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_s8_01",
+      "grade": "8",
+      "subjectId": "science_8",
+      "chapterId": "s8_ch4",
+      "topic": "دستگاه عصبی",
+      "type": "four_choice",
+      "difficulty": "easy",
+      "questionText": "کدام بخش از دستگاه عصبی مرکزی مسئول تعادل بدن و تنظیم فعالیت ماهیچه‌هاست؟",
+      "options": [
+        "مخچه",
+        "مخ",
+        "ساقه مغز",
+        "نخاع"
+      ],
+      "correctAnswer": "مخچه",
+      "explanation": "مخچه در پشت سر قرار دارد و مرکز اصلی حفظ تعادل و هماهنگی حرکات عضلات بدن است.",
+      "commonMistakes": [
+        "اشتباه کردن مخ با مخچه"
+      ],
+      "status": "approved",
+      "source": "کتاب علوم هشتم، فصل ۴، صفحه ۳۵",
+      "learningObjective": "آشنایی با وظایف بخش‌های مغز",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_m9_01",
+      "grade": "9",
+      "subjectId": "math_9",
+      "chapterId": "m9_ch1",
+      "topic": "مجموعه‌ها",
+      "type": "four_choice",
+      "difficulty": "medium",
+      "questionText": "اگر A = {۱, ۲, ۳, ۴} و B = {۳, ۴, ۵, ۶} باشد، حاصل A - B کدام است؟",
+      "options": [
+        "{۱, ۲}",
+        "{۵, ۶}",
+        "{۳, ۴}",
+        "{۱, ۲, ۵, ۶}"
+      ],
+      "correctAnswer": "{۱, ۲}",
+      "explanation": "مجموعه A - B اعضایی هستند که در A وجود دارند اما در B نیستند. اعضای ۱ و ۲ در A هستند و در B نیستند.",
+      "commonMistakes": [
+        "اشتباه گرفتن تفاضل با اشتراک یا تفاضل معکوس B - A"
+      ],
+      "status": "approved",
+      "source": "کتاب ریاضی نهم، فصل ۱، صفحه ۱۰",
+      "learningObjective": "محاسبه تفاضل دو مجموعه",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_m9_02",
+      "grade": "9",
+      "subjectId": "math_9",
+      "chapterId": "m9_ch6",
+      "topic": "شیب خط و معادله خط",
+      "type": "four_choice",
+      "difficulty": "hard",
+      "questionText": "شیب خط ۲y - ۴x = ۶ برابر با کدام گزینه است؟",
+      "options": [
+        "۲",
+        "-۲",
+        "۴",
+        "۳"
+      ],
+      "correctAnswer": "۲",
+      "explanation": "معادله را به فرم استاندارد y = mx + b می‌نویسیم: ۲y = ۴x + ۶، طرفین تقسیم بر ۲: y = ۲x + ۳. بنابراین شیب خط m = ۲ است.",
+      "commonMistakes": [
+        "خواندن مستقیم ضریب x قبل از تبدیل به فرم y = mx + b"
+      ],
+      "status": "approved",
+      "source": "کتاب ریاضی نهم، فصل ۶، صفحه ۱۰۲",
+      "learningObjective": "محاسبه شیب خط از روی معادله استاندارد",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_s9_01",
+      "grade": "9",
+      "subjectId": "science_9",
+      "chapterId": "s9_ch4",
+      "topic": "شتاب و حرکت",
+      "type": "four_choice",
+      "difficulty": "medium",
+      "questionText": "اگر خودرویی در مدت ۵ ثانیه تندی خود را از ۱۰ متر بر ثانیه به ۳۰ متر بر ثانیه برساند، شتاب متوسط آن چند متر بر مجذور ثانیه است؟",
+      "options": [
+        "۴",
+        "۲",
+        "۶",
+        "۸"
+      ],
+      "correctAnswer": "۴",
+      "explanation": "شتاب متوسط = تغییرات تندی تقسیم بر زمان = (۳۰ - ۱۰) ÷ ۵ = ۲۰ ÷ ۵ = ۴ متر بر مجذور ثانیه.",
+      "commonMistakes": [
+        "جمع کردن سرعت‌ها به جای تفریق تغییرات"
+      ],
+      "status": "approved",
+      "source": "کتاب علوم نهم، فصل ۴، صفحه ۴۴",
+      "learningObjective": "محاسبه فرمول شتاب متوسط",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    },
+    {
+      "id": "q_e9_01",
+      "grade": "9",
+      "subjectId": "english_9",
+      "chapterId": "english_9",
+      "topic": "Personality & Adjectives",
+      "type": "four_choice",
+      "difficulty": "easy",
+      "questionText": "Ali always helps old people and donates to charity. He is very _______.",
+      "options": [
+        "generous",
+        "selfish",
+        "nervous",
+        "lazy"
+      ],
+      "correctAnswer": "generous",
+      "explanation": "کلمه generous به معنی سخاوتمند و بخشنده است که با توضیح صورت سؤال مطابقت کامل دارد.",
+      "status": "approved",
+      "source": "کتاب انگلیسی نهم، Lesson 1: Personality",
+      "learningObjective": "Vocabulary acquisition",
+      "createdAt": "2026-10-16T18:21:21.750Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "std_01",
+      "baleChatId": 1000001,
+      "username": "mohammadi_m",
+      "fullName": "علی محمدی",
+      "grade": "7",
+      "className": "۷۰۱ (شهید بهشتی)",
+      "isApproved": true,
+      "isActive": true,
+      "joinedAt": "۱۴۰۵/۰۱/۰۲",
+      "lastActiveAt": "همین الان",
+      "totalScore": 1488,
+      "leaguePoints": 430,
+      "completedQuizzes": 20,
+      "accuracyRate": 88,
+      "streakDays": 6,
+      "badges": [
+        "شکارچی اشتباهات",
+        "استاد ریاضی",
+        "قهرمان دوئل",
+        "معلم کوچولو"
+      ]
+    },
+    {
+      "id": "std_02",
+      "baleChatId": 1000002,
+      "username": "rezaei_amir",
+      "fullName": "امیررضا رضایی",
+      "grade": "8",
+      "className": "۸۰۲ (شهید مطهری)",
+      "isApproved": true,
+      "isActive": true,
+      "joinedAt": "۱۴۰۵/۰۱/۰۵",
+      "lastActiveAt": "۲ ساعت پیش",
+      "totalScore": 1180,
+      "leaguePoints": 290,
+      "completedQuizzes": 14,
+      "accuracyRate": 82,
+      "streakDays": 4,
+      "badges": [
+        "استاد علوم",
+        "سرعت و دقت"
+      ]
+    },
+    {
+      "id": "std_03",
+      "baleChatId": 1000003,
+      "username": "hosseini_p",
+      "fullName": "پارسا حسینی",
+      "grade": "9",
+      "className": "۹۰۱ (شهید چمران)",
+      "isApproved": true,
+      "isActive": true,
+      "joinedAt": "۱۴۰۵/۰۱/۰۱",
+      "lastActiveAt": "امروز",
+      "totalScore": 1980,
+      "leaguePoints": 510,
+      "completedQuizzes": 26,
+      "accuracyRate": 94,
+      "streakDays": 12,
+      "badges": [
+        "رئیس شکن",
+        "نخبه نهم",
+        "معلم کوچولو",
+        "اتاق فرار"
+      ]
+    },
+    {
+      "id": "std_1792255953218",
+      "baleChatId": 1434129251,
+      "username": "",
+      "fullName": "مهراد مرادپور",
+      "grade": "8",
+      "className": "شهید رجایی",
+      "isApproved": true,
+      "isActive": true,
+      "joinedAt": "۱۴۰۵/۷/۲۵",
+      "lastActiveAt": "همین الان",
+      "totalScore": 100,
+      "leaguePoints": 50,
+      "completedQuizzes": 0,
+      "accuracyRate": 100,
+      "streakDays": 1,
+      "badges": [
+        "تازه وارد مفید"
+      ]
+    },
+    {
+      "id": "st_1792488659727",
+      "baleChatId": 891338441,
+      "username": "shetab_mh8",
+      "fullName": "شتاب بوشهری",
+      "grade": "8",
+      "className": "پایه هشتم",
+      "isApproved": true,
+      "joinedAt": "۱۴۰۵/۷/۲۸",
+      "lastActiveAt": "امروز",
+      "leaguePoints": 100,
+      "tier": "برنزی",
+      "stats": {
+        "totalAnswered": 0,
+        "correctAnswers": 0,
+        "accuracyPercentage": 0,
+        "streakDays": 1,
+        "duelsPlayed": 0,
+        "duelsWon": 0
+      }
+    }
+  ],
+  "leitnerItems": [
+    {
+      "id": "leitner_1792174947760",
+      "studentId": "std_01",
+      "questionId": "q_m7_02",
+      "box": 1,
+      "nextReviewDate": "2026-10-17T18:22:27.760Z",
+      "lastReviewDate": "2026-10-16T18:22:27.760Z",
+      "consecutiveSuccesses": 0,
+      "mistakeReason": "concept"
+    }
+  ],
+  "quizResults": [],
+  "resources": [
+    {
+      "id": "res_chap_7_math",
+      "title": "کتاب رسمی ریاضی پایه هفتم (۱۴۰۵–۱۴۰۶)",
+      "grade": "7",
+      "subjectId": "math_7",
+      "url": "https://chap.sch.ir/category/dorose-paye-haftom",
+      "publisher": "سازمان پژوهش و برنامه‌ریزی آموزشی",
+      "academicYear": "۱۴۰۵–۱۴۰۶",
+      "status": "approved_for_release",
+      "lastCheckedDate": "۱۴۰۵/۰۱/۱۵",
+      "coveragePercentage": 100,
+      "notes": "تطبیق کامل سرفصل‌ها با چاپ رسمی و راهنمای تدریس معلم"
+    },
+    {
+      "id": "res_chap_8_science",
+      "title": "کتاب رسمی علوم تجربی پایه هشتم",
+      "grade": "8",
+      "subjectId": "science_8",
+      "url": "https://chap.sch.ir/category/dorose-paye-hashtom",
+      "publisher": "سازمان پژوهش و برنامه‌ریزی آموزشی",
+      "academicYear": "۱۴۰۵–۱۴۰۶",
+      "status": "approved_for_release",
+      "lastCheckedDate": "۱۴۰۵/۰۱/۱۵",
+      "coveragePercentage": 95,
+      "notes": "بررسی علمی مباحث فیزیک و زیست‌شناسی"
+    },
+    {
+      "id": "res_roshd_9_exams",
+      "title": "نمونه سؤالات هماهنگ استانی پایه نهم - شبکه رشد",
+      "grade": "9",
+      "subjectId": "math_9",
+      "url": "https://www.roshd.ir/exams/grade9",
+      "publisher": "پایگاه ملی مدارس ایران (رشد)",
+      "academicYear": "۱۴۰۴–۱۴۰۵",
+      "status": "scientifically_reviewed",
+      "lastCheckedDate": "۱۴۰۵/۰۱/۱۰",
+      "coveragePercentage": 88,
+      "notes": "استخراج آزمون‌های هماهنگ نهایی خرداد و شهریور"
+    },
+    {
+      "id": "res_mofid_bank",
+      "title": "بانک سؤالات اختصاصی دبیرستان مفید یادگار امام",
+      "grade": "7",
+      "subjectId": "science_7",
+      "url": "https://mofidsch.ir/yadegar/exam-bank",
+      "publisher": "گروه آموزشی دبیرستان مفید",
+      "academicYear": "۱۴۰۵–۱۴۰۶",
+      "status": "approved_for_release",
+      "lastCheckedDate": "۱۴۰۵/۰۱/۱۸",
+      "coveragePercentage": 100,
+      "notes": "طراحی شده توسط کادر دبیران مجرب مدرسه مفید"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_1794497824533_gpq1",
+      "timestamp": "2026-11-12T15:37:04.533Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سپر پایداری ۲۴ ساعته فعال شد."
+    },
+    {
+      "id": "log_1792945482339_4b5o",
+      "timestamp": "2026-10-25T16:24:42.339Z",
+      "actor": "مدیر سامانه",
+      "action": "استخراج سؤال با OCR",
+      "details": "2 سؤال از تصویر برگه استخراج و در بانک سؤالات ذخیره شد."
+    },
+    {
+      "id": "log_1792945473654_2nrb",
+      "timestamp": "2026-10-25T16:24:33.654Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سرویس Long Polling بدون وقفه (Zero-Delay) آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792945434260_cb1n",
+      "timestamp": "2026-10-25T16:23:54.260Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سرویس Long Polling بدون وقفه (Zero-Delay) آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792945190320_jw8j",
+      "timestamp": "2026-10-25T16:19:50.320Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سرویس Long Polling بدون وقفه (Zero-Delay) آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792679864886_nio0",
+      "timestamp": "2026-10-22T14:37:44.886Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سرویس Long Polling بدون وقفه (Zero-Delay) آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792664997978_eec1",
+      "timestamp": "2026-10-22T10:29:57.978Z",
+      "actor": "هوش مصنوعی مدیر",
+      "action": "پردازش دستور عمومی",
+      "details": "دستور: \"وضعیت سیستم را گزارش کن\" بررسی و وضعیت سیستم پایش شد."
+    },
+    {
+      "id": "log_1792664969953_fd68",
+      "timestamp": "2026-10-22T10:29:29.953Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سرویس Long Polling بدون وقفه (Zero-Delay) آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792664920362_knyj",
+      "timestamp": "2026-10-22T10:28:40.362Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ بلادرنگ",
+      "details": "سرویس Long Polling بدون وقفه (Zero-Delay) آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792499204840_1f83",
+      "timestamp": "2026-10-20T12:26:44.840Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792499188825_lonm",
+      "timestamp": "2026-10-20T12:26:28.825Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792499188825_hg69",
+      "timestamp": "2026-10-20T12:26:28.825Z",
+      "actor": "مدیر سامانه",
+      "action": "حذف وبهوک",
+      "details": "وبهوک ربات بله حذف شد و ربات به حالت پولینگ برگشت."
+    },
+    {
+      "id": "log_1792499118245_aqin",
+      "timestamp": "2026-10-20T12:25:18.245Z",
+      "actor": "مدیر سامانه",
+      "action": "تنظیم وبهوک روی سرور",
+      "details": "وبهوک با موفقیت روی نشانی https://ais-dev-ri2dxsoe6cd3fathvntdgk-126315802530.europe-west3.run.app/api/bale/webhook ثبت و فعال شد."
+    },
+    {
+      "id": "log_1792499118244_jxoj",
+      "timestamp": "2026-10-20T12:25:18.244Z",
+      "actor": "ربات بله",
+      "action": "توقف پولینگ",
+      "details": "سرویس Long Polling متوقف شد."
+    },
+    {
+      "id": "log_1792499087817_3s2z",
+      "timestamp": "2026-10-20T12:24:47.817Z",
+      "actor": "مدیر سامانه",
+      "action": "تنظیم وبهوک روی سرور",
+      "details": "وبهوک با موفقیت روی نشانی https://ais-dev-ri2dxsoe6cd3fathvntdgk-126315802530.europe-west3.run.app/api/bale/webhook ثبت و فعال شد."
+    },
+    {
+      "id": "log_1792499087816_o9dp",
+      "timestamp": "2026-10-20T12:24:47.816Z",
+      "actor": "ربات بله",
+      "action": "توقف پولینگ",
+      "details": "سرویس Long Polling متوقف شد."
+    },
+    {
+      "id": "log_1792499071787_nlc9",
+      "timestamp": "2026-10-20T12:24:31.787Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792498124882_glhd",
+      "timestamp": "2026-10-20T12:08:44.882Z",
+      "actor": "مدیر سامانه",
+      "action": "تنظیم وبهوک روی سرور",
+      "details": "وبهوک با موفقیت روی نشانی https://ais-dev-ri2dxsoe6cd3fathvntdgk-126315802530.europe-west3.run.app/api/bale/webhook ثبت و فعال شد."
+    },
+    {
+      "id": "log_1792498124882_kr5a",
+      "timestamp": "2026-10-20T12:08:44.882Z",
+      "actor": "ربات بله",
+      "action": "توقف پولینگ",
+      "details": "سرویس Long Polling متوقف شد."
+    },
+    {
+      "id": "log_1792497945464_l674",
+      "timestamp": "2026-10-20T12:05:45.464Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792488885218_inyw",
+      "timestamp": "2026-10-20T09:34:45.218Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792488641974_uf6k",
+      "timestamp": "2026-10-20T09:30:41.974Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792424872522_6xe1",
+      "timestamp": "2026-10-19T15:47:52.522Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792424626465_iled",
+      "timestamp": "2026-10-19T15:43:46.465Z",
+      "actor": "مدیر سامانه",
+      "action": "ویرایش تنظیمات",
+      "details": "تنظیمات ربات بله و شناسه مدیر ذخیره شد."
+    },
+    {
+      "id": "log_1792422869035_hr8w",
+      "timestamp": "2026-10-19T15:14:29.035Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling برای دریافت پیام‌های بله آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792259579343_bghm",
+      "timestamp": "2026-10-17T17:52:59.343Z",
+      "actor": "هوش مصنوعی مدیر",
+      "action": "حذف سؤال (دستیار سریع)",
+      "details": "سؤال q_ai_1792259575726 حذف شد."
+    },
+    {
+      "id": "log_1792259575726_oakk",
+      "timestamp": "2026-10-17T17:52:55.726Z",
+      "actor": "هوش مصنوعی مدیر",
+      "action": "افزودن سؤال دستیار",
+      "details": "سؤال جدید پایه 8 با موفقیت ثبت شد."
+    },
+    {
+      "id": "log_1792259556334_x5le",
+      "timestamp": "2026-10-17T17:52:36.334Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling برای دریافت پیام‌های بله آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792255898820_oiix",
+      "timestamp": "2026-10-17T16:51:38.820Z",
+      "actor": "مدیر سامانه",
+      "action": "ویرایش تنظیمات",
+      "details": "تنظیمات ربات بله و شناسه مدیر ذخیره شد."
+    },
+    {
+      "id": "log_1792255882511_hmio",
+      "timestamp": "2026-10-17T16:51:22.511Z",
+      "actor": "مدیر سامانه",
+      "action": "ویرایش تنظیمات",
+      "details": "تنظیمات ربات بله و شناسه مدیر ذخیره شد."
+    },
+    {
+      "id": "log_1792255807015_3bms",
+      "timestamp": "2026-10-17T16:50:07.015Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling برای دریافت پیام‌های بله آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792255791241_p4ig",
+      "timestamp": "2026-10-17T16:49:51.241Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling برای دریافت پیام‌های بله آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792175696944_bl3y",
+      "timestamp": "2026-10-16T18:34:56.944Z",
+      "actor": "مدیر بله",
+      "action": "حذف سؤال",
+      "details": "سؤال q_ai_1792175662568 توسط مدیر از طریق دکمه چت حذف شد."
+    },
+    {
+      "id": "log_1792175677173_osfb",
+      "timestamp": "2026-10-16T18:34:37.173Z",
+      "actor": "هوش مصنوعی مدیر",
+      "action": "مدیریت دانش‌آموز",
+      "details": "تغییرات روی علی محمدی اعمال شد."
+    },
+    {
+      "id": "log_1792175662569_mhe0",
+      "timestamp": "2026-10-16T18:34:22.569Z",
+      "actor": "هوش مصنوعی مدیر",
+      "action": "افزودن سؤال دستیار",
+      "details": "سؤال جدید پایه 9 با موفقیت ثبت شد."
+    },
+    {
+      "id": "log_1792175419953_cpja",
+      "timestamp": "2026-10-16T18:30:19.953Z",
+      "actor": "ربات بله",
+      "action": "توقف پولینگ",
+      "details": "سرویس Long Polling متوقف شد."
+    },
+    {
+      "id": "log_1792175221260_llk1",
+      "timestamp": "2026-10-16T18:27:01.260Z",
+      "actor": "ربات بله",
+      "action": "شروع پولینگ",
+      "details": "سرویس Long Polling برای دریافت پیام‌های بله آغاز به کار کرد."
+    },
+    {
+      "id": "log_1792175217052_cdmb",
+      "timestamp": "2026-10-16T18:26:57.052Z",
+      "actor": "مدیر سامانه",
+      "action": "ویرایش تنظیمات",
+      "details": "تنظیمات ربات بله و شناسه مدیر ذخیره شد."
+    },
+    {
+      "id": "log_01",
+      "timestamp": "2026-10-16T18:21:21.751Z",
+      "actor": "سیستم",
+      "action": "راه‌اندازی اولیه",
+      "details": "پایگاه داده سامانه مفیدگیم برای پایه‌های هفتم، هشتم و نهم مقداردهی شد."
+    }
+  ],
+  "admins": [
+    {
+      "id": "adm_super",
+      "chatId": 1000001,
+      "fullName": "مدیر ارشد دبیرستان مفید",
+      "role": "super_admin",
+      "addedAt": "۱۴۰۵/۰۱/۰۱",
+      "permissions": {
+        "canManageQuestions": true,
+        "canManageStudents": true,
+        "canBroadcast": true,
+        "canUseAiCopilot": true,
+        "canManageAdmins": true
+      }
+    },
+    {
+      "id": "adm_principal",
+      "chatId": 2000002,
+      "fullName": "مدیر مجتمع مفید یادگار امام",
+      "role": "principal",
+      "addedAt": "۱۴۰۵/۰۱/۰۱",
+      "permissions": {
+        "canManageQuestions": true,
+        "canManageStudents": true,
+        "canBroadcast": true,
+        "canUseAiCopilot": true,
+        "canManageAdmins": true
+      }
+    },
+    {
+      "id": "adm_edu_head",
+      "chatId": 3000003,
+      "fullName": "معاونت آموزشی متوسطه اول",
+      "role": "teacher",
+      "addedAt": "۱۴۰۵/۰۱/۰۱",
+      "permissions": {
+        "canManageQuestions": true,
+        "canManageStudents": true,
+        "canBroadcast": true,
+        "canUseAiCopilot": true,
+        "canManageAdmins": false
+      }
+    },
+    {
+      "id": "adm_1792259588377",
+      "chatId": 7778889,
+      "fullName": "مدیر جدید منتخب",
+      "role": "teacher",
+      "addedAt": "۱۴۰۵/۷/۲۵",
+      "permissions": {
+        "canManageQuestions": true,
+        "canManageStudents": true,
+        "canBroadcast": true,
+        "canUseAiCopilot": true,
+        "canManageAdmins": false
+      }
+    }
+  ],
+  "mistakes": [],
+  "duels": [],
+  "dailyMissions": [
+    {
+      "studentId": "st_01",
+      "date": "۱۴۰۵/۷/۳۰",
+      "practiceQuizCount": 0,
+      "duelsCount": 0,
+      "lessonsReadCount": 0,
+      "mistakesReviewedCount": 0,
+      "claimedMissionIds": []
+    },
+    {
+      "studentId": "std_01",
+      "date": "۱۴۰۵/۷/۳۰",
+      "practiceQuizCount": 0,
+      "duelsCount": 0,
+      "lessonsReadCount": 0,
+      "mistakesReviewedCount": 0,
+      "claimedMissionIds": []
+    }
+  ],
+  "studyPlans": [
+    {
+      "id": "sp_7_sat_1",
+      "grade": "7",
+      "dayOfWeek": "شنبه",
+      "subject": "ریاضی",
+      "topic": "فصل ۳: جبر و معادله (حل تمرین)",
+      "durationMinutes": 45,
+      "tips": "ابتدا متغیرها را به یک طرف و اعداد ثابت را به طرف دیگر ببرید."
+    },
+    {
+      "id": "sp_7_sat_2",
+      "grade": "7",
+      "dayOfWeek": "شنبه",
+      "subject": "علوم تجربی",
+      "topic": "فصل ۴: آب‌کره و سفر آب درون زمین",
+      "durationMinutes": 30,
+      "tips": "چرخه آب و سفره‌های آب زیرزمینی را در ذهن خود رسم کنید."
+    },
+    {
+      "id": "sp_7_sat_3",
+      "grade": "7",
+      "dayOfWeek": "شنبه",
+      "subject": "پیام‌های آسمان",
+      "topic": "درس ۴: عبور آسان",
+      "durationMinutes": 20,
+      "tips": "پیام آیات و احادیث متن درس را مرور فرمایید."
+    },
+    {
+      "id": "sp_7_sun_1",
+      "grade": "7",
+      "dayOfWeek": "یکشنبه",
+      "subject": "ادبیات فارسی",
+      "topic": "درس ۵: آرایه‌های ادبی و تشبیه",
+      "durationMinutes": 40,
+      "tips": "چهار رکن تشبیه (مشبه، مشبه‌به، ادات، وجه‌شبه) را مشخص کنید."
+    },
+    {
+      "id": "sp_7_sun_2",
+      "grade": "7",
+      "dayOfWeek": "یکشنبه",
+      "subject": "زبان انگلیسی",
+      "topic": "Lesson 3: My Age & Numbers",
+      "durationMinutes": 30,
+      "tips": "اعداد ۱ تا ۱۰۰ و مکالمه سن و تاریخ تولد را با صدای بلند تمرین کنید."
+    },
+    {
+      "id": "sp_7_sun_3",
+      "grade": "7",
+      "dayOfWeek": "یکشنبه",
+      "subject": "مطالعات اجتماعی",
+      "topic": "درس ۷: تولید و توزیع",
+      "durationMinutes": 25,
+      "tips": "عوامل تولید (منابع طبیعی، سرمایه، نیروی انسانی) را یادداشت کنید."
+    },
+    {
+      "id": "sp_7_mon_1",
+      "grade": "7",
+      "dayOfWeek": "دوشنبه",
+      "subject": "ریاضی",
+      "topic": "فصل ۲: جمع و تفریق اعداد صحیح",
+      "durationMinutes": 45,
+      "tips": "علامت‌ها را با محور اعداد تجسم کنید؛ منفی در منفی مثبت است."
+    },
+    {
+      "id": "sp_7_mon_2",
+      "grade": "7",
+      "dayOfWeek": "دوشنبه",
+      "subject": "عربی",
+      "topic": "درس ۳: جملات اسمیه و کلمات پرسشی",
+      "durationMinutes": 30,
+      "tips": "ضمایر و اسم‌های اشاره مفرد و جمع را جدول‌بندی کنید."
+    },
+    {
+      "id": "sp_7_tue_1",
+      "grade": "7",
+      "dayOfWeek": "سه‌شنبه",
+      "subject": "علوم تجربی",
+      "topic": "فصل ۵: گوارش و جذب مواد غذایی",
+      "durationMinutes": 40,
+      "tips": "نقش آنزیم‌ها و مسیر لوله گوارش را گام‌به‌گام بررسی نمایید."
+    },
+    {
+      "id": "sp_7_wed_1",
+      "grade": "7",
+      "dayOfWeek": "چهارشنبه",
+      "subject": "ریاضی",
+      "topic": "حل آزمون جامع تستی و تست‌های مفیدگیم",
+      "durationMinutes": 50,
+      "tips": "زمان‌بندی تست‌زنی را با شبیه‌ساز کوئیز رعایت فرمایید."
+    },
+    {
+      "id": "sp_7_thu_1",
+      "grade": "7",
+      "dayOfWeek": "پنجشنبه",
+      "subject": "مرور اشتباهات",
+      "topic": "دفترچه تحلیل آزمون و رفع نقاط ضعف",
+      "durationMinutes": 45,
+      "tips": "تست‌هایی که علامت غلط داشتند را دوباره بدون نگاه به پاسخنامه حل کنید."
+    },
+    {
+      "id": "sp_7_fri_1",
+      "grade": "7",
+      "dayOfWeek": "جمعه",
+      "subject": "جمع‌بندی و بازی",
+      "topic": "دوئل با هم‌کلاسی‌ها و مأموریت‌های لیگ مفید",
+      "durationMinutes": 30,
+      "tips": "با حل مأموریت‌های هفتگی سکه و امتیاز دوئل جمع‌آوری کنید."
+    },
+    {
+      "id": "sp_8_sat_1",
+      "grade": "8",
+      "dayOfWeek": "شنبه",
+      "subject": "ریاضی",
+      "topic": "فصل ۳: چندضلعی‌ها و توازی خطوط",
+      "durationMinutes": 45,
+      "tips": "فرمول مجموع زوایای داخلی: (n-2) × ۱۸۰ درجه."
+    },
+    {
+      "id": "sp_8_sat_2",
+      "grade": "8",
+      "dayOfWeek": "شنبه",
+      "subject": "علوم تجربی",
+      "topic": "فصل ۴: تنظیم عصبی و ساختار نورون",
+      "durationMinutes": 35,
+      "tips": "پیام عصبی حسی و حرکتی را مرور کنید."
+    },
+    {
+      "id": "sp_8_sun_1",
+      "grade": "8",
+      "dayOfWeek": "یکشنبه",
+      "subject": "ادبیات فارسی",
+      "topic": "درس ۴: نقش‌های دستوری (نهاد، مفعول، مسند)",
+      "durationMinutes": 40,
+      "tips": "ابتدا فعل جمله را پیدا کنید تا اجزای دیگر آشکار شوند."
+    },
+    {
+      "id": "sp_8_mon_1",
+      "grade": "8",
+      "dayOfWeek": "دوشنبه",
+      "subject": "ریاضی",
+      "topic": "فصل ۱: عددهای گویا و محاسبات کسری",
+      "durationMinutes": 45,
+      "tips": "اولویت پرانتز، ضرب، تقسیم و سپس جمع و تفریق."
+    },
+    {
+      "id": "sp_8_tue_1",
+      "grade": "8",
+      "dayOfWeek": "سه‌شنبه",
+      "subject": "زبان انگلیسی",
+      "topic": "Lesson 2: My Week & Daily Activities",
+      "durationMinutes": 35,
+      "tips": "روزهای هفته و افعال زمان حال ساده."
+    },
+    {
+      "id": "sp_8_wed_1",
+      "grade": "8",
+      "dayOfWeek": "چهارشنبه",
+      "subject": "علوم تجربی",
+      "topic": "فصل ۲: تغییرهای شیمیایی در خدمت زندگی",
+      "durationMinutes": 40,
+      "tips": "واکنش‌های گرماگیر و گرماده و سوختن."
+    },
+    {
+      "id": "sp_8_thu_1",
+      "grade": "8",
+      "dayOfWeek": "پنجشنبه",
+      "subject": "مرور اشتباهات",
+      "topic": "تحلیل کوئیزها و رفع اشکال",
+      "durationMinutes": 45,
+      "tips": "تثبیت نکات سؤالات غلط در لایتنر."
+    },
+    {
+      "id": "sp_9_sat_1",
+      "grade": "9",
+      "dayOfWeek": "شنبه",
+      "subject": "ریاضی",
+      "topic": "فصل ۳: استدلال و اثبات در هندسه",
+      "durationMinutes": 50,
+      "tips": "هم‌نهشتی مثلث‌ها (ض‌زض، زض‌ز، ض‌ض‌ض) و حالت وتر."
+    },
+    {
+      "id": "sp_9_sat_2",
+      "grade": "9",
+      "dayOfWeek": "شنبه",
+      "subject": "علوم تجربی",
+      "topic": "فصل ۴: حرکت چیست؟ تندی و سرعت",
+      "durationMinutes": 40,
+      "tips": "تفاوت مسافت با جابه‌جایی و فرمول شتاب متوسط."
+    },
+    {
+      "id": "sp_9_sun_1",
+      "grade": "9",
+      "dayOfWeek": "یکشنبه",
+      "subject": "ادبیات فارسی",
+      "topic": "درس ۳: قالب‌های شعری و آرایه‌های ترکیبی",
+      "durationMinutes": 45,
+      "tips": "قصیده، غزل، مثنوی و قطعه."
+    },
+    {
+      "id": "sp_9_mon_1",
+      "grade": "9",
+      "dayOfWeek": "دوشنبه",
+      "subject": "ریاضی",
+      "topic": "فصل ۱: مجموعه‌ها و احتمال رخ‌دادن پیشامد",
+      "durationMinutes": 50,
+      "tips": "تعداد اعضای پیشامد بر کل حالت‌های ممکن n(S)."
+    },
+    {
+      "id": "sp_9_tue_1",
+      "grade": "9",
+      "dayOfWeek": "سه‌شنبه",
+      "subject": "زبان انگلیسی",
+      "topic": "Lesson 2: Travel & Past Continuous",
+      "durationMinutes": 35,
+      "tips": "گذشته استمراری: was/were + verb-ing."
+    },
+    {
+      "id": "sp_9_wed_1",
+      "grade": "9",
+      "dayOfWeek": "چهارشنبه",
+      "subject": "علوم تجربی",
+      "topic": "فصل ۱: مواد و نقش آنها در زندگی (فلزات و بسپار)",
+      "durationMinutes": 40,
+      "tips": "واکنش‌پذیری فلزها با اکسیژن."
+    },
+    {
+      "id": "sp_9_thu_1",
+      "grade": "9",
+      "dayOfWeek": "پنجشنبه",
+      "subject": "مرور اشتباهات",
+      "topic": "دفترچه خطاهای تستی مفیدگیم",
+      "durationMinutes": 45,
+      "tips": "تست‌های ستاره‌دار و دام‌دار آزمون‌های آزمایشی."
+    }
+  ]
+}
